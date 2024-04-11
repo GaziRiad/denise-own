@@ -56,7 +56,9 @@ function HeroNav() {
 
       <div
         className={`fixed inset-0 bg-brown z-20 transition-all duration-1000 transform origin-right ${
-          navIsOpen ? "translate-x-0" : "-translate-x-full"
+          navIsOpen
+            ? "translate-y-0 xl:translate-x-0"
+            : "-translate-y-full xl:-translate-x-full"
         }`}
       >
         <svg
