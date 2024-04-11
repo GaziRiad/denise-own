@@ -50,3 +50,7 @@
   flex: 0 0 100%;
   min-width: 0;
 }
+
+.ReactCollapse--collapse {
+  transition: height 500ms;
+}

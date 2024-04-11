@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { Collapse } from "react-collapse";
 
 function AccordionItem({ title, body }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,6 +14,9 @@ function AccordionItem({ title, body }) {
       >
         <p className="text-base text-brown font-medium">{title}</p>
         <svg
+          className={`transform transition-transform duration-500 ${
+            isOpen ? "rotate-180" : "rotate-0"
+          }`}
           width="14"
           height="8"
           viewBox="0 0 14 8"
@@ -23,13 +27,15 @@ function AccordionItem({ title, body }) {
         </svg>
       </div>
 
-      <p
-        className={`text-base text-brown font-medium transition-all ${
-          isOpen ? "block" : "hidden"
-        }`}
-      >
-        {body}
-      </p>
+      <Collapse isOpened={isOpen}>
+        <p
+          className={`text-base text-brown font-medium transition-all ${
+            isOpen ? "block" : "hidden"
+          }`}
+        >
+          {body}
+        </p>
+      </Collapse>
     </div>
   );
 }
