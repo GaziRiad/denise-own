@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+
+/* html {
+  font-size: 62.5%;
+} */
+
+@font-face {
+  font-family: "fontspring";
+  src: url("../public/fonts/Fontspring-DEMO-theseasons-bd.otf");
+}
+
+.text-grad {
+  background-image: linear-gradient(to top, #000, rgb(255, 255, 255, 0));
+}
+
+.nav-with-gradient::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: calc(100% - 40px);
+  transform: translateX(-50%);
+  height: 2px;
+  background-color: #4b372b;
+}
+
+@media (min-width: 1280px) {
+  .nav-with-gradient::after {
+    left: auto;
+    right: 0;
+    bottom: auto;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to bottom, #fff, #4b372b);
+  }
+}
+
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+}
