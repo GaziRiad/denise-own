@@ -33,8 +33,8 @@ function Features() {
 
   return (
     <section className="flex flex-col justify-center lg:flex-row parentContainer">
-      <div className="flex-1 h-2/3 ">
-        <h1 className=" font-display text-xl text-brown px-5 py-6 2xl:px-36 xl:text-5xl rightBlock">
+      <div className="flex-1">
+        <h1 className="font-display text-xl text-brown px-5 py-6 xl:px-12 3xl:px-36 2xl:text-5xl rightBlock">
           Samen aan de slag met
         </h1>
       </div>
