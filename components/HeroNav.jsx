@@ -61,6 +61,7 @@ function HeroNav() {
       >
         <svg
           className="w-[360%] pr-36 sm:w-full sm:pr-0"
+          width="100%"
           height="100vh"
           viewBox="0 0 1568 1047"
           fill="none"
