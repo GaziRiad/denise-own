@@ -1,4 +1,5 @@
 function MenuIcon({ onClick }) {
+  console.log("CLICK!");
   return (
     <div className="flex flex-col gap-3 cursor-pointer" onClick={onClick}>
       <div className=" h-0.5 w-12 bg-white"></div>
