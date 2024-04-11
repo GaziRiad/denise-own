@@ -16,8 +16,8 @@ function Features() {
       ScrollTrigger.create({
         trigger: ".parentContainer",
         start: "top top",
-        // end: "bottom +=60%",
-        end: "bottom +=50%",
+        // end: "bottom +=50%",
+        end: "bottom bottom",
         pin: ".rightBlock",
         scrub: true,
         anticipatePin: 1, // Ensures the pin animation is more responsive
