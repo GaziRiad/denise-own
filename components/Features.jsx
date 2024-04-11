@@ -16,6 +16,7 @@ function Features() {
       ScrollTrigger.create({
         trigger: ".parentContainer",
         start: "top top",
+        // end: "bottom +=60%",
         end: "bottom +=50%",
         pin: ".rightBlock",
         scrub: true,
@@ -50,7 +51,7 @@ function Features() {
               alt={`Image of ${feature.title}`}
               loading="lazy"
             />
-            <div className="absolute bottom-0 text-grad w-full flex flex-col items-start justify-center text-center px-5 pb-12 xl:px-16">
+            <div className="absolute bottom-0 text-grad h-full w-full flex flex-col items-start justify-end text-center px-5 pb-12 xl:px-16">
               <h1 className="text-white text-md mb-4 font-medium">
                 {feature.title}
               </h1>

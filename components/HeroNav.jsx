@@ -4,6 +4,7 @@ import Link from "next/link";
 
 import { useEffect, useState } from "react";
 import MenuIcon from "./MenuIcon";
+import { pagesLinks, socialMedia } from "@/constants/links";
 
 function HeroNav() {
   const [navIsOpen, setNavIsOpen] = useState(false);
@@ -59,7 +60,7 @@ function HeroNav() {
         }`}
       >
         <svg
-          width="100%"
+          className="w-[360%] pr-36 sm:w-full sm:pr-0"
           height="100vh"
           viewBox="0 0 1568 1047"
           fill="none"
@@ -77,25 +78,62 @@ function HeroNav() {
           />
         </svg>
 
-        <ul className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 z-50 font-display text-4xl text-white flex flex-col gap-8 ">
-          <li>
-            <Link className="transition-all hover:text-brownLight" href="#">
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link className="transition-all hover:text-brownLight" href="#">
-              Over
-            </Link>
-          </li>
+        <ul className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 z-50 font-display text-4xl text-white flex flex-col gap-8">
+          {pagesLinks.map((link) => (
+            <li key={link.name}>
+              <Link
+                className="transition-all hover:text-brownLight"
+                href={link.link}
+              >
+                {link.name}
+              </Link>
+            </li>
+          ))}
+        </ul>
+
+        <ul className="absolute bottom-0 left-1/2 -translate-y-1/2 -translate-x-1/2 z-50 font-display text-base text-white flex flex-col gap-8 lg:pb-11 lg:flex-row">
+          {socialMedia.map((link) => (
+            <li key={link.name}>
+              <Link
+                className="flex items-center justify-center gap-3 transition-all hover:text-brownLight"
+                href={link.link}
+                target="_blank"
+              >
+                {link.name}
+                <span>
+                  <svg
+                    width="17"
+                    height="17"
+                    viewBox="0 0 17 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2.5 1H16M16 1V13M16 1L1 16"
+                      stroke="#FAFAF7"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </span>
+              </Link>
+            </li>
+          ))}
         </ul>
 
         <button
           className=" absolute top-0 left-0 z-50 flex flex-col gap-1.5 pt-10 pl-10"
           onClick={handleNavClose}
         >
-          <div className="-rotate-45 w-10 h-1 bg-white duration-500"></div>
-          <div className="rotate-45 -translate-y-2 w-10 h-1 mb-1.5 bg-white duration-500 "></div>
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M1 1L19 19" stroke="white" stroke-width="2" />
+            <path d="M19 1L1 19" stroke="white" stroke-width="2" />
+          </svg>
         </button>
       </div>
     </div>

@@ -1,3 +1,4 @@
+import { pagesLinks, socialMedia } from "@/constants/links";
 import Link from "next/link";
 
 function Footer() {
@@ -9,16 +10,16 @@ function Footer() {
             <strong>Navigeren</strong>
           </p>
           <ul className="flex flex-col justify-center gap-6 transition-all xl:items-center xl:flex-row">
-            <li>
-              <Link href="#" target="blank" className="hover:text-brownLight">
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link href="#" target="blank" className="hover:text-brownLight">
-                Over
-              </Link>
-            </li>
+            {pagesLinks.map((link) => (
+              <li key={link.name}>
+                <Link
+                  className="transition-all hover:text-brownLight"
+                  href={link.link}
+                >
+                  {link.name}
+                </Link>
+              </li>
+            ))}
           </ul>
         </nav>
         <div className="flex flex-col items-center justify-center gap-6 transition-all xl:items-center xl:flex-row">
@@ -26,21 +27,17 @@ function Footer() {
             <strong>Social media</strong>
           </p>
           <ul className="font-thin text-xs flex flex-col justify-center gap-6 transition-all xl:items-center xl:flex-row">
-            <li className="hover:brownLight">
-              <Link href="#" target="_blank" className="hover:text-brownLight">
-                TikTok
-              </Link>
-            </li>
-            <li>
-              <Link href="#" target="_blank" className="hover:text-brownLight">
-                Instagram
-              </Link>
-            </li>
-            <li>
-              <Link href="#" target="_blank" className="hover:text-brownLight">
-                LinkedIn
-              </Link>
-            </li>
+            {socialMedia.map((link) => (
+              <li key={link.name}>
+                <Link
+                  className="flex items-center justify-center gap-3 transition-all hover:text-brownLight"
+                  href={link.link}
+                  target="_blank"
+                >
+                  {link.name}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
