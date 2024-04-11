@@ -3,9 +3,9 @@ import { Sliders } from "./Sliders";
 
 function Testimonials() {
   return (
-    <section className="container mx-auto px-5 py-44">
+    <section className="container mx-auto px-5 lg:px-10 xl:py-20 3xl:py-44">
       <div className="mb-20 xl:w-1/2">
-        <h1 className="font-display text-xl text-brown mb-3 lg:mb-9 xl:text-5xl">
+        <h1 className="font-display text-xl text-brown mb-3 lg:mb-9 2xl:text-5xl">
           Deze toppers gingen je voor
         </h1>
         <p className="font-medium text-base text-brown xl:text-md">
