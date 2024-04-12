@@ -29,7 +29,7 @@ function Hero() {
       <HeroNav />
       <div className="-z-50 bg-home-hero bg-cover bg-no-repeat bg-bottom h-screen w-full flex items-end justify-center relative hero">
         <div className="text-grad w-full h-screen flex flex-col items-center justify-center text-center px-5 xl:px-[260px] 2xl:px-[302px]">
-          <div className="mt-auto pb-[20%] sm:pb-[10%]">
+          <div className="mt-auto pb-[35%] sm:pb-[20%] lg:pb-[10%]">
             <h1 className="font-display text-white text-2xl leading-tight xl:text-3xl 2xl:text-4xl">
               Welkom bij Denise Anna
             </h1>
