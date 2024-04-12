@@ -40,7 +40,7 @@ function Features() {
             <Image
               src={feature.img}
               fill
-              className="absolute inset-0 -z-50"
+              className="absolute inset-0 -z-50 object-cover"
               alt={`Image of ${feature.title}`}
               loading="lazy"
             />
