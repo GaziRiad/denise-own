@@ -1,12 +1,34 @@
+"use client";
+
+import { useEffect } from "react";
 import Button from "./Button";
 import HeroNav from "./HeroNav";
 
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 function Hero() {
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    ScrollTrigger.create({
+      trigger: ".hero",
+      start: "bottom bottom",
+      end: "top top",
+      endTrigger: ".parentContainer",
+      pin: true,
+      pinSpacing: false,
+    });
+
+    // Clean up function to unregister ScrollTrigger on component unmount
+    return () => ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+  }, []);
+
   return (
-    <section className="bg-home-hero bg-cover bg-no-repeat bg-bottom h-screen w-full flex items-end justify-center relative">
+    <section className="-z-50 bg-home-hero bg-cover bg-no-repeat bg-bottom h-screen w-full flex items-end justify-center relative hero">
       <div className="text-grad w-full h-screen flex flex-col items-center justify-center text-center px-5 xl:px-[260px] 2xl:px-[302px]">
         <HeroNav />
-        <div className=" mt-auto  pb-[20%] sm:pb-[10%]">
+        <div className=" mt-auto pb-[20%] sm:pb-[10%]">
           <h1 className="font-display text-white text-2xl leading-tight xl:text-3xl 2xl:text-4xl">
             Welkom bij Denise Anna
           </h1>
