@@ -29,18 +29,14 @@ function Features() {
 
   return (
     <section className="flex flex-col justify-center lg:flex-row parentContainer">
-      <div className="flex-1 h-[75vh]">
+      <div className="flex-1 h-[95vh]">
         <h1 className="font-display text-xl text-brown px-5 py-6 xl:px-12 3xl:px-36 2xl:text-5xl rightBlock">
           Samen aan de slag met
         </h1>
       </div>
       <div className="flex-1">
         {features.map((feature) => (
-          <div
-            key={feature.title}
-            // className="w-full h-[608px] xl:h-[784px] relative"
-            className="w-full h-[75vh] relative"
-          >
+          <div key={feature.title} className="w-full h-[95vh] relative">
             <Image
               src={feature.img}
               fill

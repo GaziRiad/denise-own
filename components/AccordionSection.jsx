@@ -3,12 +3,12 @@ import AccordionItem from "./AccordionItem";
 
 function AccordionSection() {
   return (
-    <section className="min-h-[70vh] flex items-center justify-center bg-brownLight py-24 px-5 lg:px-10 xl:py-20 2xl:py-44">
-      <div className="container mx-auto">
-        <h1 className="text-brown font-display text-xl mb-16 xl:-mb-12 xl:text-2xl">
+    <section className="min-h-[70vh] flex items-center justify-center bg-brownLight py-24 px-5 lg:px-10 3xl:py-44">
+      <div className="container mx-auto flex-col flex justify-between gap-6 xl:items-start xl:flex-row">
+        <h1 className="flex-1 text-brown font-display text-xl xl:-mt-16 xl:text-2xl">
           Veel gestelde vragen
         </h1>
-        <div className="flex flex-col justify-center gap-4">
+        <div className="flex-1 flex flex-col justify-center gap-4">
           {items.map((faq, i) => (
             <AccordionItem key={i} title={faq.title} body={faq.text} />
           ))}
