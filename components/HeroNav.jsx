@@ -67,6 +67,7 @@ function HeroNav() {
             : "-translate-y-[200%] xl:translate-y-0 xl:-translate-x-full"
         }`}
       >
+        <div className="noise-layer"></div>
         <svg
           width="100%"
           height="100vh"
