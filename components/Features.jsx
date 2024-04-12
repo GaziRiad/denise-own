@@ -40,11 +40,11 @@ function Features() {
             <Image
               src={feature.img}
               fill
-              className="absolute inset-0 z-50 object-cover"
+              className="absolute inset-0 z-10 object-cover"
               alt={`Image of ${feature.title}`}
               loading="lazy"
             />
-            <div className="absolute bottom-0 text-grad h-full w-full flex flex-col items-start justify-end text-center px-5 pb-12 xl:px-16">
+            <div className="absolute z-20 bottom-0 text-grad h-full w-full flex flex-col items-start justify-end text-center px-5 pb-12 xl:px-16">
               <h1 className="text-white text-md mb-4 font-medium">
                 {feature.title}
               </h1>
