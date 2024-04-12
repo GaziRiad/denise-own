@@ -24,13 +24,13 @@ function HeroNav() {
 
   return (
     <div>
-      <header className="absolute z-10 top-0 left-0 w-full border-transparent nav-with-gradient px-5 py-4 flex justify-between items-center xl:h-screen xl:border-r xl:flex-col xl:w-auto xl:px-4">
-        {/* STICKY NAVBAR */}
-        {/* <header
+      {/* <header className="absolute z-10 top-0 left-0 w-full border-transparent nav-with-gradient px-5 py-4 flex justify-between items-center xl:h-screen xl:border-r xl:flex-col xl:w-auto xl:px-4 mix-blend-difference"> */}
+      {/* STICKY NAVBAR */}
+      <header
         className={`${
           navIsOpen ? "absolute" : "fixed"
-        } z-40 top-0 left-0 w-full border-transparent nav-with-gradient px-5 py-4 flex justify-between items-center xl:h-screen xl:border-r xl:flex-col xl:w-auto xl:px-4 shadow-xl bg-black`}
-      > */}
+        } z-40 top-0 left-0 w-full border-transparent nav-with-gradient px-5 py-4 flex justify-between items-center xl:h-screen xl:border-r xl:flex-col xl:w-auto xl:px-4 shadow-xl mix-blend-difference`}
+      >
         <svg
           width="51"
           height="32"
@@ -38,13 +38,13 @@ function HeroNav() {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <g clipPath="url(#clip0_28_13)">
+          <g clip-path="url(#clip0_28_13)">
             <path
               d="M47.523 26.7119L36.3151 0L31.8897 1.9887L32.4768 3.25424C32.8832 4.0678 32.9283 4.79096 32.5671 5.69492L31.1311 9.2565C31.2756 9.65424 31.402 10.0701 31.5104 10.4768L33.5154 5.51412L39.3406 19.4802H31.8988C31.8626 19.7243 31.8265 19.9684 31.7723 20.2034H39.6567L42.3751 26.7119C43.6305 29.6949 44.2627 30.8701 42.7725 31.3672V32H51.0001V31.3672C49.9615 30.8701 48.7783 29.6949 47.523 26.7119Z"
               fill="white"
             />
             <path
-              d="M11.2892 0.361572H0V0.994341C1.49017 1.49152 1.80627 2.84745 1.80627 6.10168V26.2599C1.80627 29.5141 1.49017 30.87 0 31.3672V32H12.2826C16.8525 32 20.6818 30.5898 23.4725 28.113C24.0505 27.6068 24.5833 27.0463 25.071 26.4497C26.4889 24.7051 27.5095 22.5989 28.0694 20.2034C28.1326 19.9684 28.1778 19.7243 28.223 19.4802C28.3223 19.0102 28.3945 18.5401 28.4487 18.052C28.539 17.2565 28.5842 16.4339 28.5842 15.5842V15.548C28.5481 8.90395 24.2943 0.361572 11.2892 0.361572ZM11.9665 31.2768H9.52807C7.04445 31.2768 6.59288 30.1017 6.59288 27.9774V1.08474H8.39915C18.4691 1.08474 23.2557 8.49716 23.2557 17.7627C23.2557 27.0282 19.2368 31.2768 11.9665 31.2768Z"
+              d="M11.2892 0.361816H0V0.994585C1.49017 1.49176 1.80627 2.84769 1.80627 6.10193V26.2601C1.80627 29.5144 1.49017 30.8703 0 31.3675V32.0002H12.2826C16.8525 32.0002 20.6818 30.5901 23.4725 28.1132C24.0505 27.607 24.5833 27.0466 25.071 26.45C26.4889 24.7053 27.5095 22.5991 28.0694 20.2036C28.1326 19.9686 28.1778 19.7245 28.2229 19.4805C28.3223 19.0104 28.3945 18.5403 28.4487 18.0522C28.539 17.2567 28.5842 16.4341 28.5842 15.5844V15.5483C28.5481 8.90419 24.2943 0.361816 11.2892 0.361816ZM11.9665 31.2771H9.52807C7.04445 31.2771 6.59288 30.1019 6.59288 27.9776V1.08498H8.39915C18.4691 1.08498 23.2557 8.49741 23.2557 17.7629C23.2557 27.0285 19.2368 31.2771 11.9665 31.2771Z"
               fill="white"
             />
           </g>
@@ -54,6 +54,7 @@ function HeroNav() {
             </clipPath>
           </defs>
         </svg>
+
         <MenuIcon onClick={handleNavOpen} />
         <p className="hidden text-sm font-normal text-white -rotate-90 pb-14 translate-x-[40%] xl:block">
           © 2024
