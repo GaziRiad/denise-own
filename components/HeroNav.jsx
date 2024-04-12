@@ -86,7 +86,7 @@ function HeroNav() {
           />
         </svg>
 
-        <ul className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 z-50 font-display text-4xl text-white flex flex-col gap-8">
+        <ul className="absolute top-[45%] left-1/2 -translate-y-1/2 -translate-x-1/2 z-50 font-display text-3xl text-white flex flex-col items-center gap-3 xl:text-4xl xl:gap-8 xl:top-1/2">
           {pagesLinks.map((link) => (
             <li key={link.name}>
               <Link
@@ -99,7 +99,7 @@ function HeroNav() {
           ))}
         </ul>
 
-        <ul className="absolute bottom-0 left-1/2 -translate-y-1/2 -translate-x-1/2 z-50 font-display text-base text-white flex flex-col gap-8 lg:pb-11 lg:flex-row">
+        <ul className="absolute bottom-0 left-1/2 -translate-y-1/2 -translate-x-1/2 z-50 font-display text-base text-white flex flex-col gap-4 lg:gap-8 lg:pb-11 lg:flex-row">
           {socialMedia.map((link) => (
             <li key={link.name}>
               <Link
