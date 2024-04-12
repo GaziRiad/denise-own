@@ -24,7 +24,7 @@ function HeroNav() {
 
   return (
     <div>
-      <header className="absolute z-0 top-0 left-0 w-full border-transparent nav-with-gradient px-5 py-4 flex justify-between items-center xl:h-screen xl:border-r xl:flex-col xl:w-auto xl:px-4">
+      <header className="absolute z-10 top-0 left-0 w-full border-transparent nav-with-gradient px-5 py-4 flex justify-between items-center xl:h-screen xl:border-r xl:flex-col xl:w-auto xl:px-4">
         {/* STICKY NAVBAR */}
         {/* <header
         className={`${
@@ -61,7 +61,7 @@ function HeroNav() {
       </header>
 
       <div
-        className={`fixed inset-0 bg-brown z-40 transition-all duration-1000 transform ${
+        className={`fixed inset-0 bg-brown z-20 transition-all duration-1000 transform ${
           navIsOpen
             ? "translate-y-0 xl:translate-y-0 xl:translate-x-0"
             : "-translate-y-[200%] xl:translate-y-0 xl:-translate-x-full"
