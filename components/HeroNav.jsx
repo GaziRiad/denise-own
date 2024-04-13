@@ -57,7 +57,7 @@ function HeroNav() {
         </p>
       </header>
 
-      <NavMenu onClick={handleNavClose} />
+      <NavMenu navIsOpen={navIsOpen} onClick={handleNavClose} />
     </div>
   );
 }
