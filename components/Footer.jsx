@@ -3,13 +3,13 @@ import Link from "next/link";
 
 function Footer() {
   return (
-    <footer className="bg-brown text-white flex flex-col items-start py-4 px-5 pt-12 pb-4 xl:pt-4 xl:flex-row xl:items-center xl:justify-between">
-      <div className="w-1/2 font-thin text-xs flex flex-row-reverse items-start justify-between xl:pl-[12%] xl:flex-row">
-        <nav className="flex flex-col justify-center gap-6 mb-20 xl:items-center xl:flex-row xl:mb-0">
+    <footer className="flex flex-col items-start bg-brown px-5 py-4 pb-4 pt-12 text-white xl:flex-row xl:items-center xl:justify-between xl:pt-4">
+      <div className="flex w-1/2 flex-row-reverse items-start justify-between text-xs font-thin xl:flex-row xl:pl-[12%]">
+        <nav className="mb-20 flex flex-col justify-center gap-6 xl:mb-0 xl:flex-row xl:items-center">
           <p>
             <strong>Navigeren</strong>
           </p>
-          <ul className="flex flex-col justify-center gap-6 transition-all xl:items-center xl:flex-row z-50">
+          <ul className="z-50 flex flex-col justify-center gap-6 transition-all xl:flex-row xl:items-center">
             {pagesLinks.map((link) => (
               <li key={link.name}>
                 <Link
@@ -22,11 +22,11 @@ function Footer() {
             ))}
           </ul>
         </nav>
-        <div className="flex flex-col items-start justify-start gap-6 transition-all xl:items-center xl:flex-row">
+        <div className="flex flex-col items-start justify-start gap-6 transition-all xl:flex-row xl:items-center">
           <p>
             <strong>Social media</strong>
           </p>
-          <ul className="font-thin text-xs flex flex-col justify-center gap-6 transition-all xl:items-center xl:flex-row z-50">
+          <ul className="z-50 flex flex-col justify-center gap-6 text-xs font-thin transition-all xl:flex-row xl:items-center">
             {socialMedia.map((link) => (
               <li key={link.name}>
                 <Link
@@ -41,7 +41,7 @@ function Footer() {
           </ul>
         </div>
       </div>
-      <p className="flex items-center justify-end gap-2 font-thin text-xs xl:w-1/2 z-50">
+      <p className="z-50 flex items-center justify-end gap-2 text-xs font-thin xl:w-1/2">
         <span>Made with</span>
         <span>
           <svg

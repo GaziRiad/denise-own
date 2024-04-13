@@ -27,7 +27,7 @@ function HeroNav() {
       <header
         className={`${
           navIsOpen ? "absolute" : "fixed"
-        } z-40 top-0 left-0 w-full border-transparent nav-with-gradient px-5 py-4 flex justify-between items-center xl:h-screen xl:border-r xl:flex-col xl:w-auto xl:px-4 shadow-xl mix-blend-difference`}
+        } nav-with-gradient left-0 top-0 z-40 flex w-full items-center justify-between border-transparent px-5 py-4 mix-blend-difference shadow-xl xl:h-screen xl:w-auto xl:flex-col xl:border-r xl:px-4`}
       >
         <svg
           width="51"
@@ -54,16 +54,16 @@ function HeroNav() {
         </svg>
 
         <MenuIcon onClick={handleNavOpen} />
-        <p className="hidden text-sm font-normal text-white -rotate-90 pb-14 translate-x-[40%] xl:block">
+        <p className="hidden translate-x-[40%] -rotate-90 pb-14 text-sm font-normal text-white xl:block">
           © 2024
         </p>
       </header>
 
       <div
-        className={`fixed inset-0 bg-brown z-[99] transition-all duration-1000 transform ${
+        className={`fixed inset-0 z-[99] transform bg-brown transition-all duration-1000 ${
           navIsOpen
-            ? "translate-y-0 xl:translate-y-0 xl:translate-x-0"
-            : "-translate-y-[200%] xl:translate-y-0 xl:-translate-x-full"
+            ? "translate-y-0 xl:translate-x-0 xl:translate-y-0"
+            : "-translate-y-[200%] xl:-translate-x-full xl:translate-y-0"
         }`}
       >
         <div className="noise-layer"></div>
@@ -86,7 +86,7 @@ function HeroNav() {
           />
         </svg>
 
-        <ul className="absolute top-[45%] left-1/2 -translate-y-1/2 -translate-x-1/2 z-50 font-display text-3xl text-white flex flex-col items-center gap-3 xl:text-4xl xl:gap-8 xl:top-1/2">
+        <ul className="absolute left-1/2 top-[45%] z-50 flex -translate-x-1/2 -translate-y-1/2 flex-col items-center gap-3 font-display text-3xl text-white xl:top-1/2 xl:gap-8 xl:text-4xl">
           {pagesLinks.map((link) => (
             <li key={link.name}>
               <Link
@@ -99,7 +99,7 @@ function HeroNav() {
           ))}
         </ul>
 
-        <ul className="absolute bottom-0 left-1/2 -translate-y-1/2 -translate-x-1/2 z-50 font-display text-base text-white flex flex-col gap-4 lg:gap-8 lg:pb-11 lg:flex-row">
+        <ul className="absolute bottom-0 left-1/2 z-50 flex -translate-x-1/2 -translate-y-1/2 flex-col gap-4 font-display text-base text-white lg:flex-row lg:gap-8 lg:pb-11">
           {socialMedia.map((link) => (
             <li key={link.name}>
               <Link
@@ -129,7 +129,7 @@ function HeroNav() {
         </ul>
 
         <button
-          className="absolute top-0 right-0 pr-8 z-50 flex flex-col gap-1.5 pt-10 xl:left-0 xl:pl-10"
+          className="absolute right-0 top-0 z-50 flex flex-col gap-1.5 pr-8 pt-10 xl:left-0 xl:pl-10"
           onClick={handleNavClose}
         >
           <svg

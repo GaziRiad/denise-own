@@ -28,15 +28,15 @@ function Features() {
   }, []);
 
   return (
-    <section className="flex flex-col justify-center lg:flex-row parentContainer bg-white">
-      <div className="flex-1 h-[100vh] ">
-        <h1 className="font-display text-xl text-brown px-5 py-6 xl:px-28 3xl:px-36 xl:text-3xl 2xl:text-5xl rightBlock">
+    <section className="parentContainer flex flex-col justify-center bg-white lg:flex-row">
+      <div className="h-[100vh] flex-1 ">
+        <h1 className="rightBlock px-5 py-6 font-display text-xl text-brown xl:px-28 xl:text-3xl 2xl:text-5xl 3xl:px-36">
           Samen aan de slag met
         </h1>
       </div>
       <div className="flex-1">
         {features.map((feature) => (
-          <div key={feature.title} className="w-full h-[100vh] relative">
+          <div key={feature.title} className="relative h-[100vh] w-full">
             <Image
               src={feature.img}
               fill
@@ -44,11 +44,11 @@ function Features() {
               alt={`Image of ${feature.title}`}
               loading="lazy"
             />
-            <div className="absolute z-20 bottom-0 text-grad h-full w-full flex flex-col items-start justify-end text-center px-5 pb-12 xl:px-16">
-              <h1 className="text-white text-md mb-4 font-medium">
+            <div className="text-grad absolute bottom-0 z-20 flex h-full w-full flex-col items-start justify-end px-5 pb-12 text-center xl:px-16">
+              <h1 className="mb-4 text-md font-medium text-white">
                 {feature.title}
               </h1>
-              <p className="text-white font-light text-start text-sm lg:text-base ">
+              <p className="text-start text-sm font-light text-white lg:text-base ">
                 {feature.text}
               </p>
             </div>

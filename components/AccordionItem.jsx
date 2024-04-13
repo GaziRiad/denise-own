@@ -7,12 +7,12 @@ function AccordionItem({ title, body }) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="w-full ml-auto border-b border-brown pb-5">
+    <div className="ml-auto w-full border-b border-brown pb-5">
       <div
-        className="flex items-center justify-between cursor-pointer transition-all mb-4"
+        className="mb-4 flex cursor-pointer items-center justify-between transition-all"
         onClick={() => setIsOpen((isOpen) => !isOpen)}
       >
-        <p className="text-base text-brown font-medium">{title}</p>
+        <p className="text-base font-medium text-brown">{title}</p>
         <svg
           className={`transform transition-transform duration-500 ${
             isOpen ? "rotate-180" : "rotate-0"
@@ -29,7 +29,7 @@ function AccordionItem({ title, body }) {
 
       <Collapse isOpened={isOpen}>
         <p
-          className={`text-base text-brown font-medium transition-all ${
+          className={`text-base font-medium text-brown transition-all ${
             isOpen ? "block" : "hidden"
           }`}
         >

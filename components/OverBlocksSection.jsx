@@ -4,8 +4,8 @@ import Image from "next/image";
 function OverBlocksSection() {
   return (
     <section className="bg-white">
-      <div className="mx-auto px-5 py-20 lg:px-10 3xl:py-44 xl:max-w-6xl 2xl:max-w-[1400px]">
-        <p className="font-display text-[2.5rem] max-w-5xl mb-20 xl:mb-44 xl:text-[4rem]">
+      <div className="mx-auto px-5 py-20 lg:px-10 xl:max-w-6xl 2xl:max-w-[1400px] 3xl:py-44">
+        <p className="mb-20 max-w-5xl font-display text-[2.5rem] xl:mb-44 xl:text-[4rem]">
           “Aute voluptate sint cupidatat reprehenderit aliquip Lorem in minim
           occaecat tempor ut occaecat ad eu.”
         </p>
@@ -23,10 +23,10 @@ function OverBlocksSection() {
                 width={2000}
                 height={2000}
                 alt="Over page image"
-                className="flex-1 w-full h-auto object-cover md:w-2/3 xl:w-1/3 2xl:w-[616px] 2xl:h-[616px] xl:aspect-square"
+                className="h-auto w-full flex-1 object-cover md:w-2/3 xl:aspect-square xl:w-1/3 2xl:h-[616px] 2xl:w-[616px]"
               />
               <div className="flex-1">
-                <p className="text-md font-medium mb-4">{block.title}</p>
+                <p className="mb-4 text-md font-medium">{block.title}</p>
                 <p className="text-base font-light">{block.text}</p>
               </div>
             </div>

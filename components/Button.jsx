@@ -1,13 +1,13 @@
 function Button({ children, color = "transparent" }) {
   if (color === "dark")
     return (
-      <button className="z-50 bg-brown text-white font-light rounded-[40px] px-6 py-2 text-base transition-all hover:bg-brownLight">
+      <button className="z-50 rounded-[40px] bg-brown px-6 py-2 text-base font-light text-white transition-all hover:bg-brownLight">
         {children}
       </button>
     );
 
   return (
-    <button className="z-50 bg-transparent border text-white font-light rounded-[40px] px-6 py-2 text-base transition-all hover:bg-brownLight hover:border-brownLight">
+    <button className="z-50 rounded-[40px] border bg-transparent px-6 py-2 text-base font-light text-white transition-all hover:border-brownLight hover:bg-brownLight">
       {children}
     </button>
   );

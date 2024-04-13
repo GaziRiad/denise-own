@@ -21,11 +21,11 @@ export function Sliders() {
         <div class="embla__container">
           {testimonials.map((testimonial, i) => (
             <div key={i} class="embla__slide">
-              <p className="font-medium text-md mb-4">{testimonial.title}</p>
-              <blockquote className="font-thin text-sm mb-4 lg:text-base">
+              <p className="mb-4 text-md font-medium">{testimonial.title}</p>
+              <blockquote className="mb-4 text-sm font-thin lg:text-base">
                 {testimonial.text}
               </blockquote>
-              <p className="font-thin text-base mb-16">{testimonial.author}</p>
+              <p className="mb-16 text-base font-thin">{testimonial.author}</p>
             </div>
           ))}
         </div>
