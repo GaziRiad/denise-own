@@ -7,7 +7,7 @@ function HeroOver() {
       <HeroNav />
       <div className="mx-auto px-5 py-20 lg:px-10 xl:max-w-6xl 2xl:max-w-[1400px] 3xl:py-44">
         <Image
-          src="/images/hero-home.png"
+          src="/images/hero-home.jpg"
           width={240}
           height={240}
           alt="hero over image"
