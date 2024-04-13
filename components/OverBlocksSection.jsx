@@ -14,7 +14,7 @@ function OverBlocksSection() {
           {blocksContent.map((block, i) => (
             <div
               className={`flex flex-col items-center justify-center gap-10 ${
-                i % 2 === 0 ? "flex-row-reverse" : ""
+                i % 2 === 0 ? " xl:flex-row-reverse" : ""
               } xl:flex-row xl:gap-12`}
               key={block.title}
             >
