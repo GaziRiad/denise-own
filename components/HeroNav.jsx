@@ -24,7 +24,6 @@ function HeroNav() {
 
   return (
     <div>
-      {/* <header className="absolute z-10 top-0 left-0 w-full border-transparent nav-with-gradient px-5 py-4 flex justify-between items-center xl:h-screen xl:border-r xl:flex-col xl:w-auto xl:px-4 mix-blend-difference"> */}
       {/* STICKY NAVBAR */}
       <header
         className={`${

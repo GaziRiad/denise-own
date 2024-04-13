@@ -4,17 +4,13 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
 
-/* html {
-  font-size: 62.5%;
-} */
-
 @font-face {
   font-family: "fontspring";
   src: url("../public/fonts/Fontspring-DEMO-theseasons-bd.otf");
 }
 
 .text-grad {
-  background-image: linear-gradient(to top, #000, rgb(0, 0, 0, 0.3));
+  background-image: linear-gradient(to top, #000, rgb(0, 0, 0, 0.1));
 }
 
 .nav-with-gradient::after {
@@ -25,7 +21,8 @@
   width: calc(100% - 40px);
   transform: translateX(-50%);
   height: 2px;
-  background-color: #4b372b;
+  /* background: linear-gradient(to bottom, #fff, #4b372b); */
+  background: #fff;
 }
 
 @media (min-width: 1280px) {
@@ -36,7 +33,8 @@
     top: 0;
     width: 2px;
     height: 100%;
-    background: linear-gradient(to bottom, #fff, #4b372b);
+    /* background: linear-gradient(to bottom, #fff, #4b372b); */
+    background: #fff;
   }
 }
 
@@ -61,6 +59,6 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("/images/noise-texture.png");
+  background-image: url("../public/images/noise-texture.png");
   opacity: 0.025;
 }

@@ -5,6 +5,6 @@ export const socialMedia = [
 ];
 
 export const pagesLinks = [
-  { name: "Home", link: "#" },
-  { name: "Over", link: "#" },
+  { name: "Home", link: "/" },
+  { name: "Over", link: "/over" },
 ];
