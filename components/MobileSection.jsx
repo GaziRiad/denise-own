@@ -21,7 +21,6 @@ function MobileSection() {
           cupidatat duis laborum. Dolore sint labore quis id minim aute occaecat
           Lorem sit reprehenderit nulla velit.
         </p>
-
         <Button color="dark">Aanmelden</Button>
       </div>
     </section>

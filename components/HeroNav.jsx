@@ -24,7 +24,6 @@ function HeroNav() {
 
   return (
     <div>
-      {/* STICKY NAVBAR */}
       <header
         className={`${
           navIsOpen ? "absolute" : "fixed"
@@ -61,7 +60,7 @@ function HeroNav() {
       </header>
 
       <div
-        className={`fixed inset-0 bg-brown z-50 transition-all duration-1000 transform ${
+        className={`fixed inset-0 bg-brown z-[99] transition-all duration-1000 transform ${
           navIsOpen
             ? "translate-y-0 xl:translate-y-0 xl:translate-x-0"
             : "-translate-y-[200%] xl:translate-y-0 xl:-translate-x-full"
@@ -130,7 +129,7 @@ function HeroNav() {
         </ul>
 
         <button
-          className=" absolute top-0 left-0 z-50 flex flex-col gap-1.5 pt-10 pl-10"
+          className="absolute top-0 right-0 pr-8 z-50 flex flex-col gap-1.5 pt-10 xl:left-0 xl:pl-10"
           onClick={handleNavClose}
         >
           <svg

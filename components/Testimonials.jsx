@@ -13,7 +13,7 @@ function Testimonials() {
             Gemiddeld beoordeeld met een 4,8/5!
           </p>
         </div>
-        <div className="ml-auto relative xl:pr-64 xl:w-1/2">
+        <div className="ml-auto relative xl:pr-64 xl:w-1/2 z-50">
           <Image
             src="/quote.svg"
             width={100}

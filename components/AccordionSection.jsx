@@ -9,7 +9,7 @@ function AccordionSection() {
           <h1 className="flex-1 text-brown font-display text-xl xl:-mt-16 xl:text-2xl">
             Veel gestelde vragen
           </h1>
-          <div className="flex-1 flex flex-col justify-center gap-4">
+          <div className="flex-1 flex flex-col justify-center gap-4 z-50">
             {items.map((faq, i) => (
               <AccordionItem key={i} title={faq.title} body={faq.text} />
             ))}

@@ -3,13 +3,13 @@ import Link from "next/link";
 
 function Footer() {
   return (
-    <footer className="bg-brown text-white flex flex-col items-start py-4 px-5 pt-12 pb-4 xl:flex-row xl:items-center xl:justify-between">
-      <div className="w-2/3 font-thin text-xs flex items-start justify-between xl:w-1/2 3xl:pl-36">
+    <footer className="bg-brown text-white flex flex-col items-start py-4 px-5 pt-12 pb-4 xl:pt-4 xl:flex-row xl:items-center xl:justify-between">
+      <div className="w-1/2 font-thin text-xs flex flex-row-reverse items-start justify-between xl:pl-[12%] xl:flex-row">
         <nav className="flex flex-col justify-center gap-6 mb-20 xl:items-center xl:flex-row xl:mb-0">
           <p>
             <strong>Navigeren</strong>
           </p>
-          <ul className="flex flex-col justify-center gap-6 transition-all xl:items-center xl:flex-row">
+          <ul className="flex flex-col justify-center gap-6 transition-all xl:items-center xl:flex-row z-50">
             {pagesLinks.map((link) => (
               <li key={link.name}>
                 <Link
@@ -22,15 +22,15 @@ function Footer() {
             ))}
           </ul>
         </nav>
-        <div className="flex flex-col items-center justify-center gap-6 transition-all xl:items-center xl:flex-row">
+        <div className="flex flex-col items-start justify-start gap-6 transition-all xl:items-center xl:flex-row">
           <p>
             <strong>Social media</strong>
           </p>
-          <ul className="font-thin text-xs flex flex-col justify-center gap-6 transition-all xl:items-center xl:flex-row">
+          <ul className="font-thin text-xs flex flex-col justify-center gap-6 transition-all xl:items-center xl:flex-row z-50">
             {socialMedia.map((link) => (
               <li key={link.name}>
                 <Link
-                  className="flex items-center justify-center gap-3 transition-all hover:text-brownLight"
+                  className="flex items-center gap-3 transition-all hover:text-brownLight"
                   href={link.link}
                   target="_blank"
                 >
@@ -41,7 +41,7 @@ function Footer() {
           </ul>
         </div>
       </div>
-      <p className="flex items-center justify-center gap-2 font-thin text-xs">
+      <p className="flex items-center justify-end gap-2 font-thin text-xs xl:w-1/2 z-50">
         <span>Made with</span>
         <span>
           <svg
@@ -64,7 +64,11 @@ function Footer() {
             </defs>
           </svg>
         </span>
-        <span>by Mats Hofstede</span>
+        <span>
+          <Link href="https://www.matshofstede.com/" target="_blank">
+            by Mats Hofstede
+          </Link>
+        </span>
       </p>
     </footer>
   );

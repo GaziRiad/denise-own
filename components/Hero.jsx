@@ -42,7 +42,7 @@ function Hero() {
           </div>
         </div>
       </div>
-      <div className="absolute bottom-[4%] left-1/2 -translate-x-1/2">
+      <div className="absolute bottom-[4%] left-1/2 -translate-x-1/2 z-50">
         <Button>Aanmelden</Button>
       </div>
     </section>
