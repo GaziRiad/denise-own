@@ -20,8 +20,8 @@ function OverBlocksSection() {
             >
               <Image
                 src={block.img}
-                width={320}
-                height={480}
+                width={2000}
+                height={2000}
                 alt="Over page image"
                 className="flex-1 w-full h-auto xl:w-[616px] xl:h-[616px] xl:aspect-square"
               />

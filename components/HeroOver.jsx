@@ -8,8 +8,8 @@ function HeroOver() {
       <div className="mx-auto px-5 py-20 lg:px-10 xl:max-w-6xl 2xl:max-w-[1400px] 3xl:py-44">
         <Image
           src="/images/hero-home.jpg"
-          width={240}
-          height={240}
+          width={2000}
+          height={2000}
           alt="hero over image"
           className="absolute top-[18%] z-10 aspect-square object-cover w-3/4 md:w-2/3 xl:w-[544px] xl:h-[544px]"
         />
