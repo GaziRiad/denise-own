@@ -23,7 +23,7 @@ function OverBlocksSection() {
                 width={2000}
                 height={2000}
                 alt="Over page image"
-                className="flex-1 w-full h-auto md:w-2/3 xl:w-1/3 2xl:w-[616px] 2xl:h-[616px] xl:aspect-square"
+                className="flex-1 w-full h-auto object-cover md:w-2/3 xl:w-1/3 2xl:w-[616px] 2xl:h-[616px] xl:aspect-square"
               />
               <div className="flex-1">
                 <p className="text-md font-medium mb-4">{block.title}</p>
