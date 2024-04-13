@@ -51,17 +51,6 @@
   transition: height 500ms;
 }
 
-/* .noise-layer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("../public/images/noise-texture.png");
-  opacity: 0.25;
-  z-index: 999;
-} */
-
 .noise-layer {
   position: fixed;
   top: 0;
@@ -71,6 +60,6 @@
   width: 100%;
   height: 100%;
   background-image: url("../public/images/noise-texture.png");
-  opacity: 0.02;
+  opacity: 0.015;
   z-index: 11;
 }
