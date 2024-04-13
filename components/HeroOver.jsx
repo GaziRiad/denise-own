@@ -11,7 +11,7 @@ function HeroOver() {
           width={2000}
           height={2000}
           alt="hero over image"
-          className="absolute top-[18%] z-10 aspect-square object-cover w-3/4 md:w-2/3 lg:md:w-1/2 xl:top-[8%] 2xl:xl:top-[14%]  xl:w-[544px] xl:h-[544px]"
+          className="absolute top-[18%] z-10 aspect-square object-cover w-3/4 md:w-2/3 lg:w-1/2 xl:top-[8%] xl:w-[544px] xl:h-[544px] 2xl:top-[14%]"
         />
         <div className="absolute bottom-[10%] left-1/2 -translate-x-1/2 w-full px-5 text-center z-20 xl:w-fit xl:max-w-5xl xl:text-left xl:left-1/3 xl:translate-x-0">
           <h1 className="font-display text-white text-2xl leading-tight xl:text-3xl 2xl:text-4xl">
