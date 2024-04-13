@@ -23,8 +23,7 @@ module.exports = {
         "gradient-navbar": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-        "home-hero": "url('/images/hero-home.jpg')",
-        // "home-hero": "url('/images/working-man.jpg')",
+        "home-hero": "url('/images/working-man.jpg')",
       },
       fontFamily: {
         display: "fontspring, sans-serif", // Adds a new `font-display` class
