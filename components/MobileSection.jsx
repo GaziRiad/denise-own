@@ -4,7 +4,7 @@ import Button from "./Button";
 function MobileSection() {
   return (
     <section className="bg-[#F9DCE8] pb-32 xl:pb-32 xl:pt-12">
-      <div className="max-w-7xl mx-auto flex flex-col items-center text-center">
+      <div className="max-w-5xl mx-auto flex flex-col items-center text-center">
         <Image
           src="/images/mobile.png"
           width={500}

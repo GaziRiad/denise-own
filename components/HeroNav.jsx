@@ -62,7 +62,7 @@ function HeroNav() {
       </header>
 
       <div
-        className={`fixed inset-0 bg-brown z-20 transition-all duration-1000 transform ${
+        className={`fixed inset-0 bg-brown z-50 transition-all duration-1000 transform ${
           navIsOpen
             ? "translate-y-0 xl:translate-y-0 xl:translate-x-0"
             : "-translate-y-[200%] xl:translate-y-0 xl:-translate-x-full"

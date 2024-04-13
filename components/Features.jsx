@@ -30,7 +30,7 @@ function Features() {
   return (
     <section className="flex flex-col justify-center lg:flex-row parentContainer bg-white">
       <div className="flex-1 h-[100vh] ">
-        <h1 className="font-display text-xl text-brown px-5 py-6 xl:px-12 3xl:px-36 xl:text-3xl 2xl:text-5xl rightBlock">
+        <h1 className="font-display text-xl text-brown px-5 py-6 xl:px-28 3xl:px-36 xl:text-3xl 2xl:text-5xl rightBlock">
           Samen aan de slag met
         </h1>
       </div>
