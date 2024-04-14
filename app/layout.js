@@ -22,7 +22,8 @@ export default function RootLayout({ children }) {
           id="Cookiebot"
           src="https://consent.cookiebot.com/uc.js"
           data-cbid="7fc4ac26-78f5-40a6-b0f9-d3d55af8437b"
-          data-blockingmode="auto"
+          // data-blockingmode="auto"
+          data-blockingmode="manual"
           type="text/javascript"
         ></Script>
         <GoogleTagManager containerId="GTM-TSXVZ2TP" />
