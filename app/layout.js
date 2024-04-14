@@ -28,14 +28,14 @@ export default function RootLayout({ children }) {
         </Script>
       </head>
       <body className="text-brown">
-        <noscript>
+        {/* <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-TSXVZ2TP"
             height="0"
             width="0"
             style="display:none;visibility:hidden"
           ></iframe>
-        </noscript>
+        </noscript> */}
         {children}
       </body>
     </html>
