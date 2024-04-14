@@ -1,6 +1,6 @@
 import Script from "next/script";
 
-function GoogleTagManager() {
+function GoogleTagManager({ containerId }) {
   return (
     <>
       <Script
