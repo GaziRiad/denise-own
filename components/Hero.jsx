@@ -27,7 +27,7 @@ function Hero() {
   return (
     <section className="relative">
       <HeroNav />
-      <div className="hero relative -z-50 flex h-screen w-full items-end justify-center bg-home-hero bg-cover bg-bottom bg-no-repeat">
+      <div className="hero relative -z-50 flex h-screen w-full items-end justify-center bg-home-hero bg-cover bg-center bg-no-repeat ">
         <div className="text-grad flex h-screen w-full flex-col items-center justify-center px-5 text-center xl:px-[260px] 2xl:px-[302px]">
           <div className="mt-auto pb-[35%] sm:pb-[20%] lg:pb-[10%]">
             <h1 className="mb-6 font-display text-2xl leading-tight text-white xl:text-3xl 2xl:text-4xl">
