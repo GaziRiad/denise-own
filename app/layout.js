@@ -1,7 +1,6 @@
 import Script from "next/script";
 import { Figtree } from "next/font/google";
 import "./globals.css";
-import GoogleTagManager from "@/components/custom/GoogleTagManager";
 
 export const metadata = {
   title: "Home",
@@ -19,8 +18,6 @@ const figtree = Figtree({
   subsets: ["latin"],
   display: "swap",
 });
-
-const googleTag = "GTM-TSXVZ2TP";
 
 export default function RootLayout({ children }) {
   return (
