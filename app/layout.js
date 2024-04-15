@@ -34,19 +34,19 @@ export default function RootLayout({ children }) {
           type="text/javascript"
         ></Script>
 
-        <GoogleTagManager containerId={googleTag} />
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-XDF35FP7G5"
+        ></Script>
+        <Script id="google-analytics">
+          {`window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-XDF35FP7G5');`}
+        </Script>
       </head>
-      <body className="text-brown">
-        <noscript>
-          <iframe
-            src={`https://www.googletagmanager.com/ns.html?id=${googleTag}`}
-            height="0"
-            width="0"
-            style={{ display: "none", visibility: "hidden" }}
-          ></iframe>
-        </noscript>
-        {children}
-      </body>
+      <body className="text-brown">{children}</body>
     </html>
   );
 }
