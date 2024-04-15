@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
         <Script
           id="Cookiebot"
           src="https://consent.cookiebot.com/uc.js"
-          data-cbid="4792d913-6990-4842-af3b-fa27e7ef54cd"
+          data-cbid="7fc4ac26-78f5-40a6-b0f9-d3d55af8437b"
           data-blockingmode="auto"
           type="text/javascript"
         ></Script>
