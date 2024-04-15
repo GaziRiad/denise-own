@@ -7,8 +7,8 @@ function MobileSection() {
       <div className="mx-auto flex max-w-5xl flex-col items-center text-center">
         <Image
           src="/images/mobile.png"
-          width={500}
-          height={500}
+          width={600}
+          height={600}
           alt="Anna Denise Mobile App"
           loading="lazy"
         />

@@ -5,8 +5,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
 
 @font-face {
-  font-family: "fontspring";
-  src: url("../public/fonts/Fontspring-DEMO-theseasons-bd.otf");
+  font-family: "theseasons-bd";
+  src:
+    url("/fonts/theseasons_bold_macroman/theseasons-bd-webfont.woff2")
+      format("woff2"),
+    url("/fonts/theseasons_bold_macroman/theseasons-bd-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 .text-grad {

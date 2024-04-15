@@ -10,7 +10,7 @@ function HeroOver() {
           src="/images/hero-home.jpg"
           width={2000}
           height={2000}
-          alt="hero over image"
+          alt="Een vrolijke vrouw zit lachend op het aanrecht in een helder witte keuken"
           className="absolute top-[16%] z-10 aspect-square w-3/4 object-cover md:w-2/3 lg:w-1/2 xl:top-[6%] xl:w-1/3 2xl:top-[14%]"
         />
         <div className="absolute bottom-[10%] left-1/2 z-20 w-full -translate-x-1/2 px-5 text-center xl:left-1/3 xl:w-fit xl:max-w-5xl xl:translate-x-0 xl:text-left">
