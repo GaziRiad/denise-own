@@ -27,21 +27,33 @@ export default function RootLayout({ children }) {
         <Script
           id="Cookiebot"
           src="https://consent.cookiebot.com/uc.js"
-          data-cbid="4792d913-6990-4842-af3b-fa27e7ef54cd"
+          data-cbid="7fc4ac26-78f5-40a6-b0f9-d3d55af8437b"
           data-blockingmode="auto"
           type="text/javascript"
         ></Script>
-        <GoogleTagManager containerId={"GTM-TSXVZ2TP"} />
+
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-C90PVNQHNJ"
+        ></Script>
+        <Script id="google-tag">
+          {`window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-C90PVNQHNJ');`}
+        </Script>
+        {/* <GoogleTagManager containerId={"GTM-TSXVZ2TP"} /> */}
       </head>
       <body className="text-brown">
-        <noscript>
+        {/* <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-TSXVZ2TP"
             height="0"
             width="0"
             style={{ display: "none", visibility: "hidden" }}
           ></iframe>
-        </noscript>
+        </noscript> */}
         {children}
       </body>
     </html>
