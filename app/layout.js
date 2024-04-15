@@ -18,6 +18,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={figtree.className}>
       <head>
+        <Script
+          d="Cookiebot"
+          src="https://consent.cookiebot.com/uc.js"
+          data-cbid="4792d913-6990-4842-af3b-fa27e7ef54cd"
+          type="text/javascript"
+        ></Script>
         <GoogleTagManager containerId="GTM-TSXVZ2TP" />
       </head>
       <body className="text-brown">{children}</body>
