@@ -26,7 +26,17 @@ export default function RootLayout({ children }) {
       <head>
         <GoogleTagManager containerId={"GTM-TSXVZ2TP"} />
       </head>
-      <body className="text-brown">{children}</body>
+      <body className="text-brown">
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-TSXVZ2TP"
+            height="0"
+            width="0"
+            style="display:none;visibility:hidden"
+          ></iframe>
+        </noscript>
+        {children}
+      </body>
     </html>
   );
 }
