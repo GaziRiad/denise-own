@@ -42,17 +42,38 @@
   }
 }
 
+/* Testimonials sliders */
 .embla {
   overflow: hidden;
+  z-index: 999;
 }
 .embla__container {
   display: flex;
 }
+.embla__slide-quote {
+  flex: 0 0 100%;
+  min-width: 0;
+}
+
+/*  */
+
+.app-sliders {
+  width: 100%;
+}
+
 .embla__slide {
   flex: 0 0 100%;
   min-width: 0;
 }
 
+@media (min-width: 1280px) {
+  .embla__slide {
+    flex: 0 0 30%;
+    min-width: 0;
+  }
+}
+
+/*  */
 .ReactCollapse--collapse {
   transition: height 500ms;
 }

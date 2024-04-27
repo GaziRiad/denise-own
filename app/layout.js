@@ -30,17 +30,16 @@ export default function RootLayout({ children }) {
           data-blockingmode="auto"
           type="text/javascript"
         ></Script>
-
         <Script
           async
-          src="https://www.googletagmanager.com/gtag/js?id=G-XDF35FP7G5"
+          src="https://www.googletagmanager.com/gtag/js?id=G-C90PVNQHNJ"
         ></Script>
         <Script id="google-analytics">
           {`window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
 
-          gtag('config', 'G-XDF35FP7G5');`}
+          gtag('config', 'G-C90PVNQHNJ');`}
         </Script>
       </head>
       <body className="text-brown">{children}</body>
