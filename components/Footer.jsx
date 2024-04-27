@@ -44,7 +44,7 @@ function Footer() {
       <p className="z-50 flex items-center justify-end gap-2 text-xs font-thin xl:w-1/2">
         <span>Made with</span>
         <span>
-          <svg
+          {/* <svg
             width="11"
             height="10"
             viewBox="0 0 11 10"
@@ -62,7 +62,7 @@ function Footer() {
                 <rect width="11" height="10" fill="white" />
               </clipPath>
             </defs>
-          </svg>
+          </svg> */}
         </span>
         <span>
           <Link href="https://www.matshofstede.com/" target="_blank">

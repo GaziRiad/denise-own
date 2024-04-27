@@ -6,8 +6,7 @@ function OverBlocksSection() {
     <section className="bg-white">
       <div className="mx-auto px-5 py-20 lg:px-10 xl:max-w-6xl 2xl:max-w-[1400px] 3xl:py-44">
         <p className="mb-20 max-w-5xl font-display text-[2.5rem] xl:mb-44 xl:text-[4rem]">
-          “Aute voluptate sint cupidatat reprehenderit aliquip Lorem in minim
-          occaecat tempor ut occaecat ad eu.”
+          “Ga samen met mij tot het uiterste en word jouw beste versie.”
         </p>
 
         <div className=" flex flex-col gap-24">

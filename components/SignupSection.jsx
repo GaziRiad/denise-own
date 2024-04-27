@@ -1,17 +1,9 @@
-import Image from "next/image";
 import Button from "./Button";
 
-function MobileSection() {
+function SignupSection() {
   return (
-    <section className="bg-[#CCB5A6] pb-32 xl:pt-12">
+    <section className="bg-brownLight py-32">
       <div className="mx-auto flex max-w-5xl flex-col items-center text-center">
-        <Image
-          src="/images/mobile.png"
-          width={600}
-          height={600}
-          alt="Anna Denise Mobile App"
-          loading="lazy"
-        />
         <h1 className="px-5 font-display text-xl text-brown lg:px-0 lg:text-3xl">
           Meld je aan voor de app
         </h1>
@@ -27,4 +19,4 @@ function MobileSection() {
   );
 }
 
-export default MobileSection;
+export default SignupSection;

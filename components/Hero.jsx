@@ -27,18 +27,20 @@ function Hero() {
   return (
     <section className="relative">
       <HeroNav />
-      <div className="hero relative -z-50 flex h-screen w-full items-end justify-center bg-home-hero bg-cover bg-center bg-no-repeat ">
+      <div className="hero bg- relative -z-50 flex h-screen w-full items-end justify-center bg-home-hero bg-cover bg-top bg-no-repeat">
         <div className="text-grad flex h-screen w-full flex-col items-center justify-center px-5 text-center xl:px-[260px] 2xl:px-[302px]">
           <div className="mt-auto pb-[35%] sm:pb-[20%] lg:pb-[10%]">
             <h1 className="mb-6 font-display text-2xl leading-tight text-white xl:text-3xl 2xl:text-4xl">
-              Welkom bij Denise Anna
+              Denise Anna
             </h1>
-            <p className="text-sm font-light text-white xl:text-base">
-              Velit qui voluptate pariatur minim cillum quis adipisicing ullamco
-              irure ex aliqua et. Culpa Lorem laborum reprehenderit ea qui elit
-              cupidatat duis laborum. Dolore sint labore quis id minim aute
-              occaecat Lorem sit reprehenderit nulla velit.
-            </p>
+            <div className="flex justify-center">
+              <p className="text-sm font-light text-white md:w-2/3 xl:text-base">
+                Welkom op mijn website, waar meer te vinden is over hoe ik mijn
+                mindset enorm heb veranderd in de afgelopen 3 jaar. Vanaf nu kan
+                ik via een app jullie nog beter helpen om ook deze stappen samen
+                met mij te zetten!
+              </p>
+            </div>
           </div>
         </div>
       </div>

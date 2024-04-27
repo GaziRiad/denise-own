@@ -12,7 +12,7 @@ function AccordionItem({ title, body }) {
         className="mb-4 flex cursor-pointer items-center justify-between transition-all"
         onClick={() => setIsOpen((isOpen) => !isOpen)}
       >
-        <p className="text-base font-medium text-brown">{title}</p>
+        <p className="text-base font-bold text-brown">{title}</p>
         <svg
           className={`transform transition-transform duration-500 ${
             isOpen ? "rotate-180" : "rotate-0"

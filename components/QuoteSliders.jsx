@@ -20,7 +20,7 @@ export function Sliders() {
       <div class="embla__viewport" ref={emblaRef}>
         <div class="embla__container">
           {testimonials.map((testimonial, i) => (
-            <div key={i} class="embla__slide">
+            <div key={i} class="embla__slide-quote">
               <p className="mb-4 text-md font-medium">{testimonial.title}</p>
               <blockquote className="mb-4 text-sm font-thin lg:text-base">
                 {testimonial.text}

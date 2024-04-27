@@ -27,7 +27,7 @@ function HeroNav() {
           navIsOpen ? "absolute" : "fixed"
         } nav-with-gradient left-0 top-0 z-40 flex w-full items-center justify-between border-transparent px-5 py-4 mix-blend-difference shadow-xl xl:h-screen xl:w-auto xl:flex-col xl:border-r xl:px-4`}
       >
-        <svg
+        {/* <svg
           width="51"
           height="32"
           viewBox="0 0 51 32"
@@ -49,7 +49,7 @@ function HeroNav() {
               <rect width="51" height="32" fill="white" />
             </clipPath>
           </defs>
-        </svg>
+        </svg> */}
 
         <MenuIcon onClick={handleNavOpen} />
         <p className="hidden translate-x-[40%] -rotate-90 pb-14 text-sm font-normal text-white xl:block">

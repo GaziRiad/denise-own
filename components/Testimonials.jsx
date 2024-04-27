@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Sliders } from "./Sliders";
+import { Sliders } from "./QuoteSliders";
 
 function Testimonials() {
   return (
@@ -10,7 +10,7 @@ function Testimonials() {
             Deze toppers gingen je voor
           </h1>
           <p className="text-base font-medium text-brown xl:text-md">
-            Gemiddeld beoordeeld met een 4,8/5!
+            Gemiddeld beoordeeld met een 4,8/5
           </p>
         </div>
         <div className="relative z-50 ml-auto xl:w-1/2 2xl:pr-56">
