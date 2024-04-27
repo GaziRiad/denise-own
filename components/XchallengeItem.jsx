@@ -1,22 +1,17 @@
-"use client";
-
 import { useState } from "react";
 import { Collapse } from "react-collapse";
 
-function AccordionItem({ title, body }) {
+function XchallengeItem({ title, body }) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="ml-auto w-full border-b border-brown pb-5">
+    <div>
       <div
-        className="mb-4 flex cursor-pointer items-center justify-between transition-all"
+        className="mb-1 flex cursor-pointer items-center justify-between gap-4 transition-all"
         onClick={() => setIsOpen((isOpen) => !isOpen)}
       >
-        <p className="text-base font-bold text-brown">{title}</p>
         <svg
-          className={`transform transition-transform duration-500 ${
-            isOpen ? "rotate-180" : "rotate-0"
-          }`}
+          className={`-rotate-90 transform transition-transform duration-500`}
           width="14"
           height="8"
           viewBox="0 0 14 8"
@@ -25,19 +20,19 @@ function AccordionItem({ title, body }) {
         >
           <path d="M1 1L7 7L13 1" stroke="#4B372B" />
         </svg>
+        <p className="text-base font-light">{title}</p>
       </div>
-
       <Collapse isOpened={isOpen}>
-        <div
-          className={`text-base font-medium text-brown transition-all ${
+        <p
+          className={`ml-7 text-base font-light transition-all ${
             isOpen ? "block" : "hidden"
           }`}
         >
           {body}
-        </div>
+        </p>
       </Collapse>
     </div>
   );
 }
 
-export default AccordionItem;
+export default XchallengeItem;

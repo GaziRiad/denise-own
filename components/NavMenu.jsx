@@ -11,7 +11,7 @@ function NavMenu({ navIsOpen, onClick }) {
       }`}
     >
       <div className="noise-layer"></div>
-      {/* <svg
+      <svg
         width="100%"
         height="100vh"
         viewBox="0 0 1568 1047"
@@ -28,9 +28,9 @@ function NavMenu({ navIsOpen, onClick }) {
           d="M347.087 11.8306H0V32.534C45.8155 48.8009 55.5339 93.1653 55.5339 199.64V859.191C55.5339 965.665 45.8155 1010.03 0 1026.3V1047H377.631C518.131 1047 635.863 1000.86 721.663 919.822C739.434 903.259 755.817 884.922 770.811 865.402C814.405 808.319 845.781 739.407 862.997 661.03C864.941 653.34 866.329 645.354 867.717 637.369C870.772 621.989 872.993 606.609 874.659 590.638C877.436 564.611 878.824 537.697 878.824 509.895V508.712C877.713 291.326 746.931 11.8306 347.087 11.8306ZM367.912 1023.34H292.941C216.582 1023.34 202.699 984.89 202.699 915.385V35.4916H258.233C567.834 35.4916 714.999 278.017 714.999 581.174C714.999 884.33 591.436 1023.34 367.912 1023.34Z"
           fill="#231F20"
         />
-      </svg> */}
+      </svg>
 
-      <ul className="absolute left-1/2 top-[45%] z-50 flex -translate-x-1/2 -translate-y-1/2 flex-col items-center gap-3 font-display text-3xl text-white xl:top-1/2 xl:gap-8 xl:text-4xl">
+      <ul className="absolute left-1/2 top-[45%] z-50 flex min-w-full -translate-x-1/2 -translate-y-1/2 flex-col items-center gap-3 text-center font-display text-2xl text-white xl:top-1/2 xl:gap-8 xl:text-4xl">
         {pagesLinks.map((link) => (
           <li key={link.name}>
             <Link
@@ -53,7 +53,7 @@ function NavMenu({ navIsOpen, onClick }) {
             >
               {link.name}
               <span>
-                {/* <svg
+                <svg
                   width="17"
                   height="17"
                   viewBox="0 0 17 17"
@@ -63,9 +63,9 @@ function NavMenu({ navIsOpen, onClick }) {
                   <path
                     d="M2.5 1H16M16 1V13M16 1L1 16"
                     stroke="#FAFAF7"
-                    stroke-width="2"
+                    strokeWidth="2"
                   />
-                </svg> */}
+                </svg>
               </span>
             </Link>
           </li>
@@ -76,16 +76,16 @@ function NavMenu({ navIsOpen, onClick }) {
         className="absolute right-0 top-0 z-50 flex flex-col gap-1.5 pr-8 pt-10 xl:left-0 xl:pl-10"
         onClick={onClick}
       >
-        {/* <svg
+        <svg
           width="20"
           height="20"
           viewBox="0 0 20 20"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <path d="M1 1L19 19" stroke="white" stroke-width="2" />
-          <path d="M19 1L1 19" stroke="white" stroke-width="2" />
-        </svg> */}
+          <path d="M1 1L19 19" stroke="white" strokeWidth="2" />
+          <path d="M19 1L1 19" stroke="white" strokeWidth="2" />
+        </svg>
       </button>
     </div>
   );

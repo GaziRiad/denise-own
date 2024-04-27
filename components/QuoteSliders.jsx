@@ -2,7 +2,7 @@
 
 import React, { useCallback } from "react";
 import useEmblaCarousel from "embla-carousel-react";
-import { testimonials } from "@/constants/testimonials";
+import { testimonials } from "@/translations/nl/firstPage";
 
 export function Sliders() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: false });

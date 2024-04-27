@@ -46,7 +46,7 @@ function HeroApp() {
 
       {/* SMALLER LAYOUT */}
       <div className="">
-        <div className="h-screen items-center justify-center bg-brownLight py-20 text-center lg:hidden">
+        <div className="items-center justify-center bg-brownLight py-20 text-center lg:hidden">
           <Image
             src="/images/mobile.png"
             height={1200}

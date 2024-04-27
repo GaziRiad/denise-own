@@ -1,4 +1,4 @@
-import { blocksContent } from "@/constants/overBlocks";
+import { blocksContent } from "@/translations/nl/secondPage";
 import Image from "next/image";
 
 function OverBlocksSection() {
@@ -9,7 +9,7 @@ function OverBlocksSection() {
           “Ga samen met mij tot het uiterste en word jouw beste versie.”
         </p>
 
-        <div className=" flex flex-col gap-24">
+        <div className=" z-50 flex flex-col gap-24">
           {blocksContent.map((block, i) => (
             <div
               className={`flex flex-col items-center justify-center gap-10 ${
@@ -24,9 +24,9 @@ function OverBlocksSection() {
                 alt="Over page image"
                 className="h-auto w-full flex-1 object-cover md:w-2/3 xl:aspect-square xl:w-1/3 2xl:h-[616px] 2xl:w-[616px]"
               />
-              <div className="flex-1">
+              <div className="flex-1 no-underline">
                 <p className="mb-4 text-md font-medium">{block.title}</p>
-                <p className="text-base font-light">{block.text}</p>
+                {block.text}
               </div>
             </div>
           ))}

@@ -1,11 +1,11 @@
 "use client";
 
-import { features } from "@/constants/features";
 import Image from "next/image";
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect } from "react";
+import { features } from "@/translations/nl/firstPage";
 
 function Features() {
   useEffect(() => {

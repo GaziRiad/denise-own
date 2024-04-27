@@ -1,8 +1,10 @@
 import Button from "./Button";
 
-function SignupSection() {
+function SignupSection({ bg = "brown" }) {
   return (
-    <section className="bg-brownLight py-32">
+    <section
+      className={`${bg === "brown" ? "bg-brownLight" : "bg-white"} py-32`}
+    >
       <div className="mx-auto flex max-w-5xl flex-col items-center text-center">
         <h1 className="px-5 font-display text-xl text-brown lg:px-0 lg:text-3xl">
           Meld je aan voor de app

@@ -27,14 +27,14 @@ function HeroNav() {
           navIsOpen ? "absolute" : "fixed"
         } nav-with-gradient left-0 top-0 z-40 flex w-full items-center justify-between border-transparent px-5 py-4 mix-blend-difference shadow-xl xl:h-screen xl:w-auto xl:flex-col xl:border-r xl:px-4`}
       >
-        {/* <svg
+        <svg
           width="51"
           height="32"
           viewBox="0 0 51 32"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <g clip-path="url(#clip0_28_13)">
+          <g clipPath="url(#clip0_28_13)">
             <path
               d="M47.523 26.7119L36.3151 0L31.8897 1.9887L32.4768 3.25424C32.8832 4.0678 32.9283 4.79096 32.5671 5.69492L31.1311 9.2565C31.2756 9.65424 31.402 10.0701 31.5104 10.4768L33.5154 5.51412L39.3406 19.4802H31.8988C31.8626 19.7243 31.8265 19.9684 31.7723 20.2034H39.6567L42.3751 26.7119C43.6305 29.6949 44.2627 30.8701 42.7725 31.3672V32H51.0001V31.3672C49.9615 30.8701 48.7783 29.6949 47.523 26.7119Z"
               fill="white"
@@ -49,7 +49,7 @@ function HeroNav() {
               <rect width="51" height="32" fill="white" />
             </clipPath>
           </defs>
-        </svg> */}
+        </svg>
 
         <MenuIcon onClick={handleNavOpen} />
         <p className="hidden translate-x-[40%] -rotate-90 pb-14 text-sm font-normal text-white xl:block">

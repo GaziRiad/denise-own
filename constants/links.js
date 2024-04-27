@@ -1,10 +1,11 @@
 export const socialMedia = [
   { name: "Tiktok", link: "https://www.tiktok.com/@denise_anna" },
   { name: "Instagram", link: "https://www.instagram.com/deniseanna" },
-  { name: "Linkedin", link: "https://www.linkedin.com/in/denise-venghaus-008753b5" },
+  { name: "Youtube", link: "https://www.youtube.com/user/deniis44" },
 ];
 
 export const pagesLinks = [
   { name: "Home", link: "/" },
-  { name: "Over", link: "/over" },
+  { name: "Over mij", link: "/over" },
+  { name: "App", link: "/app" },
 ];

@@ -1,4 +1,4 @@
-import { items } from "@/constants/faqs";
+import { faqItems } from "@/translations/nl/firstPage";
 import AccordionItem from "./AccordionItem";
 
 function AccordionSection() {
@@ -10,7 +10,7 @@ function AccordionSection() {
             Veel gestelde vragen
           </h1>
           <div className="z-50 flex flex-1 flex-col justify-center gap-4">
-            {items.map((faq, i) => (
+            {faqItems.map((faq, i) => (
               <AccordionItem key={i} title={faq.title} body={faq.text} />
             ))}
           </div>
