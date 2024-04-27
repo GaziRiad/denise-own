@@ -16,7 +16,7 @@ function XchallengeSection() {
           className=" h-full w-full object-cover"
         />
       </div>
-      <div className="z-50 flex-1 px-5 py-20 lg:px-16">
+      <div className="flex-1 px-5 py-20 lg:px-16">
         <p className="mb-14 font-display text-[2.5rem] lg:max-w-xl xl:text-[4rem]">
           De X dagen challange
         </p>
@@ -33,7 +33,7 @@ function XchallengeSection() {
             <p className="mb-5 text-base font-light">
               Dit krijg je voor je investering:
             </p>
-            <div className="flex flex-col items-center justify-center gap-6">
+            <div className="flex flex-col items-center justify-center gap-6 ">
               {xchanllengeFAQ.map((item, index) => (
                 <XchallengeItem
                   key={index}

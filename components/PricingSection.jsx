@@ -9,10 +9,10 @@ function PricingSection() {
           Prijzen en lidmaatschap
         </h1>
 
-        <div className=" flex flex-col gap-24">
+        <div className="flex flex-col gap-24">
           {pricingContent.map((block, i) => (
             <div
-              className={`flex flex-col items-center justify-center gap-10 ${
+              className={` flex flex-col items-center justify-center gap-10  ${
                 i % 2 !== 0 ? " xl:flex-row-reverse" : ""
               } xl:flex-row xl:gap-12`}
               key={i}
